@@ -29,50 +29,16 @@ namespace QuateProject
 
         private void btnGetQuate_Click(object sender, RoutedEventArgs e)
         {
+            // Объявляем экземпляр класса Цитат
             Quote qoute = new Quote();
 
+            // Отправляем запрос для получения случайной цитаты
+            // И сохраняем полученный результат в наш ранее созданный объект
             qoute = qoute.GetQuote();
 
+            // Выводим поле текст цитаты в label на форме
             lblQuate.Content = qoute.quoteText;
         }
     }
-
-
-
     
-
-
-
-    public class Quote
-    {
-        public string quoteText { get; set; }
-        public string quoteAuthor { get; set; }
-        public string senderName { get; set; }
-        public string senderLink { get; set; }
-        public string quoteLink { get; set; }
-
-        public Quote GetQuote()
-        {
-            string answer = string.Empty;
-            Quote q = new Quote();
-            string url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=ru&format=json";
-            var webclient = new WebClient();
-            webclient.Encoding = System.Text.Encoding.UTF8;
-
-            try
-            {
-                answer = webclient.DownloadString(url);
-               
-                Quote myDeserializedClass = JsonConvert.DeserializeObject<Quote>(answer);
-                q = myDeserializedClass;
-
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
-            }
-
-            return q;
-        }
-    }
 }
