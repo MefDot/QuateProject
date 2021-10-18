@@ -1,0 +1,21 @@
+﻿<Window x:Class="QuateProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuateProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="524.036" Width="749.1">
+    <Grid>
+        <Label Name="lblQuate" Height="300"  FontFamily="Roboto" FontSize="20" Content="Цитата " Margin="10,10,27.4,184.4"/>
+        <Button x:Name="btnGetQuate" Width="200" Height="75"  Content="Получить Цитату" FontFamily="Roboto" FontSize="20" Margin="272,354,270.4,65.4" Click="btnGetQuate_Click"/>
+      
+        
+
+
+
+
+
+    </Grid>
+</Window>
+
