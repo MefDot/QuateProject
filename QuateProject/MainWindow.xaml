@@ -6,16 +6,10 @@
         xmlns:local="clr-namespace:QuateProject"
         mc:Ignorable="d"
         Title="MainWindow" Height="524.036" Width="749.1">
-    <Grid>
-        <Label Name="lblQuate" Height="300"  FontFamily="Roboto" FontSize="20" Content="Цитата " Margin="10,10,27.4,184.4"/>
+    <Canvas>
+        <TextBlock   Foreground="AliceBlue" Name="lblQuate" Height="265"  TextWrapping="WrapWithOverflow" FontFamily="Roboto" FontSize="20" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="10" Width="635"/>
         <Button x:Name="btnGetQuate" Width="200" Height="75"  Content="Получить Цитату" FontFamily="Roboto" FontSize="20" Margin="272,354,270.4,65.4" Click="btnGetQuate_Click"/>
-      
         
-
-
-
-
-
-    </Grid>
+    </Canvas>
 </Window>
 

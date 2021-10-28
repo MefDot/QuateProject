@@ -37,7 +37,7 @@ namespace QuateProject
             qoute = qoute.GetQuote();
 
             // Выводим поле текст цитаты в label на форме
-            lblQuate.Content = qoute.quoteText;
+            lblQuate.Text = qoute.quoteText;
         }
     }
     
